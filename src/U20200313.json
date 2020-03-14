@@ -1,6 +1,6 @@
 {
 "Fairfield":{"commerciallab":{"Positive":3,"Negative":10}, "statelab": {"Positive":5,"Negative":38}},
-"Hartford":{"commerciallab": {"Positive":0,"Negative":2}, "statelab": {"Positive":0,"Negative":23}},
+"Hartford":{"commerciallab": {"Positive":1,"Negative":2}, "statelab": {"Positive":0,"Negative":23}},
 "Litchfield":{"commerciallab":{"Positive":0,"Negative":1}, "statelab": {"Positive":3,"Negative":8}},
 "Middlesex":{"commerciallab":{"Positive":0,"Negative":0}, "statelab": {"Positive":0,"Negative":2}},
 "New Haven":{"commerciallab":{"Positive":0,"Negative":0}, "statelab": {"Positive":0,"Negative":29}} ,
