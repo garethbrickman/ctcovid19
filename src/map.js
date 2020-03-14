@@ -17,6 +17,7 @@ class SimpleMap extends Component {
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: '100vh', width: '100%' }}>
+      <h1>Counties with Positive Cases as of March 14th, 2020</h1>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyAFl0p7Zj1aSMscGUdeWlGkrhqZrFyogZg' }}
           defaultCenter={this.props.center}
@@ -26,59 +27,69 @@ class SimpleMap extends Component {
             lat={41.310726}
             lng={-72.929916}
             name="New Haven County"
-            color="red"
+            source=""
+            color={dict['New Haven'] ? "red" : "gray"}
             confirmedCases={dict['New Haven']}
           />
           <Marker
             lat={41.763710}
             lng={-72.685097}
             name="Hartford County"
-            color="red"
+            source=""
+            color={dict['Hartford'] ? "red" : "gray"}
             confirmedCases={dict['Hartford']}
           />
           <Marker
             lat={41.79}
             lng={-73.24}
             name="Litchfield County"
-            color="red"
+            source=""
+            color={dict['Litchfield'] ? "red" : "gray"}
             confirmedCases={dict['Litchfield']}
           />
           <Marker
             lat={41.14121}
             lng={-73.26373}
             name="Fairfield County"
-            color="red"
+            color={dict['Fairfield'] ? "red" : "gray"}
             confirmedCases={dict['Fairfield']}
           />
           <Marker
             lat={41.56232}
             lng={-72.65065}
             name="Middlesex County"
-            color="gray"
+            source=""
+            color={dict['Middlesex'] ? "red" : "gray"}
             confirmedCases={dict['Middlesex']}
           />
           <Marker
             lat={41.35333192}
             lng={-72.092999628}
             name="New London County"
-            color="gray"
+            source=""
+            color={dict['New London'] ? "red" : "gray"}
             confirmedCases={dict['New London']}
           />
           <Marker
             lat={41.87149}
             lng={-72.36869}
             name="Tolland County"
-            color="gray"
+            source=""
+            color={dict['Tolland'] ? "red" : "gray"}
             confirmedCases={dict['Tolland']}
             />
           <Marker
             lat={41.7106543}
             lng={-72.2081338}
             name="Windham County"
-            color="gray"
+            source=""
+            color={dict['Windham'] ? "red" : "gray"}
             confirmedCases={dict['Windham']}        
             />
         </GoogleMapReact>
+        <div>
+          <p>source: <a class="link" href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a></p>
+        </div>
       </div>
     );
   }

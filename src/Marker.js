@@ -21,7 +21,7 @@ function useHover() {
 }
 
 const Marker = (props) => {
-    const { color, name, confirmedCases} = props;
+    const { color, name, confirmedCases, source} = props;
     const [ref, hovered] = useHover()
     return (
       <div className="marker"
@@ -29,7 +29,7 @@ const Marker = (props) => {
         title={name}
         ref={ref}
       >
-        {hovered && <div className="confirmedCases">{confirmedCases} Confirmed Cases</div>}
+        {hovered && <div className="confirmedCases"><p class="hoverDot">{confirmedCases} Confirmed Cases{source}</p></div>}
       </div>
     );
   };

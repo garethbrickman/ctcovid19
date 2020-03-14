@@ -25,6 +25,7 @@ class CountyTable extends React.Component {
 
         const table = (
             <div>
+                <h1>Counties Test and Positive Cases as of March 13th, 2020</h1>
                 <table>
                     <col></col>
                     <colgroup span="2"></colgroup>

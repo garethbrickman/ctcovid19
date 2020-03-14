@@ -7,6 +7,22 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+/* 
+.hoverDot {
+	background-color: black;
+	color: white;
+	border: white;
+	text-align: center;
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 12;
+	width:100%;
+	opacity:90%;
+  } */
+
+
+	a:hover {
+	color: blue;
+	}
 
 /* Reset */
 
