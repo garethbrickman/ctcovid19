@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Table from './table.js';
+import Chart from './chart.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            title: "Sick Chart Bro",
+            positiveXValues: [],
+            timeYValues: [],
+        }
+    }
+
+    render() {
+        return (
+            <div className="App">
+            <header className="App-header">
+            </header>
+            <h3>Data</h3>
+            <Table></Table>
+            <Chart
+            title = {this.state.title}
+            positiveXValues = {this.state.positiveXValues}
+            timeYValues = {this.state.timeYValues}
+            ></Chart>
+          </div>
+        )
+    }
+    componentDidUpdate(prevProps) {
+        //temp
+    }
 }
+
+
+
 
 export default App;
