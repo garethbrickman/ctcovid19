@@ -21,7 +21,7 @@ class SimpleMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <Marker
+          {/* <Marker
             lat={41.310726}
             lng={-72.929916}
             name="NEW HAVEN COUNTY"
@@ -32,7 +32,7 @@ class SimpleMap extends Component {
             lng={-72.685097}
             name="Hartford COUNTY"
             color="red"
-          />
+          /> */}
           <Marker
             lat={41.79}
             lng={-73.24}
@@ -45,7 +45,7 @@ class SimpleMap extends Component {
             name="Fairfield COUNTY"
             color="red"
           />
-          <Marker
+          {/* <Marker
             lat={41.56232}
             lng={-72.65065}
             name="Middlesex COUNTY"
@@ -67,7 +67,7 @@ class SimpleMap extends Component {
             lat={41.7106543}
             lng={-72.2081338}
             name="Windham COUNTY"
-            color="red"         />
+            color="red"         /> */}
         </GoogleMapReact>
       </div>
     );
