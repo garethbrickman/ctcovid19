@@ -66,7 +66,7 @@ class SimpleMap extends Component {
             lat={41.35333192}
             lng={-72.092999628}
             name="New London County"
-            source=""
+            source="*"
             color={dict['New London'] ? "red" : "gray"}
             confirmedCases={dict['New London']}
           />
@@ -89,6 +89,7 @@ class SimpleMap extends Component {
         </GoogleMapReact>
         <div>
           <p>source: <a class="link" href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a></p>
+          <p>source for New Haven: <a class="link" href="https://www.wtnh.com/news/connecticut/new-haven/yale-says-member-of-university-tests-positive-for-covid-19/">https://www.wtnh.com/news/connecticut/new-haven/yale-says-member-of-university-tests-positive-for-covid-19/</a></p>
         </div>
       </div>
     );
