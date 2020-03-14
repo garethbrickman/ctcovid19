@@ -88,8 +88,12 @@ class SimpleMap extends Component {
             />
         </GoogleMapReact>
         <div>
-          <p>source: <a class="link" href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a></p>
-          <p>source for New Haven: <a class="link" href="https://www.wtnh.com/news/connecticut/new-haven/yale-says-member-of-university-tests-positive-for-covid-19/">https://www.wtnh.com/news/connecticut/new-haven/yale-says-member-of-university-tests-positive-for-covid-19/</a></p>
+          <p>
+            source: <a class="link" href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a><br/>
+            source for New Haven: <a class="link" href="https://www.wtnh.com/news/connecticut/new-haven/yale-says-member-of-university-tests-positive-for-covid-19/">https://www.wtnh.com/news/connecticut/new-haven/yale-says-member-of-university-tests-positive-for-covid-19/</a><br/>
+            <br/>
+          </p>
+          <p></p>
         </div>
       </div>
     );

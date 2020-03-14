@@ -144,7 +144,6 @@ class CountyTable extends React.Component {
     render() {
         return (
             <div>
-                <h1>Covid 19 - County Data as of March 13th, 2020</h1>
                 {this.createTable()}
             </div>
         )

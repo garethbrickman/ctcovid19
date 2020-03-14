@@ -83,7 +83,7 @@ class App extends React.Component {
                 <header className="App-header">
                 </header>
                 <SimpleMap></SimpleMap>
-                <br/>
+                <br/><br/><br/><br/>
                 <CountyTable></CountyTable>
                 {/* {this.createCharTable()} */}
                 {/* <Chart
