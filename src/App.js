@@ -82,6 +82,7 @@ class App extends React.Component {
             <div className="App">
                 <header className="App-header">
                 </header>
+                <h1>Counties with Positive Cases as of March 13th, 2020</h1>
                 <SimpleMap></SimpleMap>
                 <CountyTable
                 ></CountyTable>
