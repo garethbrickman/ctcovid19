@@ -1,6 +1,7 @@
 import React from 'react';
 import Table from './table.js';
 import Chart from './chart.js'
+import SimpleMap from './map.js';
 
 
 class App extends React.Component {
@@ -101,6 +102,7 @@ class App extends React.Component {
             <div className="App">
                 <header className="App-header">
                 </header>
+                <SimpleMap></SimpleMap>
                 <h3>Covid 19 in CT as of March 13, 2020</h3>
                 {this.createTable()}
                 <Chart
