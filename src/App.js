@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from './chart.js'
+// import Chart from './chart.js'
 import SimpleMap from './map.js';
 
 
@@ -131,7 +131,7 @@ class App extends React.Component {
                         <td>{dict["Windham"]["statelab"]["Negative"] + dict["Windham"]["commerciallab"]["Negative"] + dict["Windham"]["statelab"]["Positive"] + dict["Windham"]["commerciallab"]["Positive"]}</td>
                     </tr>
                     <tr>
-                        <th scope="row">Windham</th>
+                        <th scope="row">Totals</th>
                         <td>{totalStatePos}</td>
                         <td>{totalStateNeg}</td>
                         <td>{totalComercialPos}</td>
