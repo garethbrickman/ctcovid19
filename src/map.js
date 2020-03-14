@@ -13,6 +13,7 @@ class SimpleMap extends Component {
   };
  
   render() {
+    const dict = require('./m20200314.json')
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: '100vh', width: '100%' }}>
@@ -25,57 +26,57 @@ class SimpleMap extends Component {
             lat={41.310726}
             lng={-72.929916}
             name="New Haven County"
-            color="gray"
-            confirmedCases="0"
+            color="red"
+            confirmedCases={dict['New Haven']}
           />
           <Marker
             lat={41.763710}
             lng={-72.685097}
             name="Hartford County"
             color="red"
-            confirmedCases="1"
+            confirmedCases={dict['Hartford']}
           />
           <Marker
             lat={41.79}
             lng={-73.24}
             name="Litchfield County"
             color="red"
-            confirmedCases="3"
+            confirmedCases={dict['Litchfield']}
           />
           <Marker
             lat={41.14121}
             lng={-73.26373}
             name="Fairfield County"
             color="red"
-            confirmedCases="8"
+            confirmedCases={dict['Fairfield']}
           />
           <Marker
             lat={41.56232}
             lng={-72.65065}
             name="Middlesex County"
             color="gray"
-            confirmedCases="0"
+            confirmedCases={dict['Middlesex']}
           />
           <Marker
             lat={41.35333192}
             lng={-72.092999628}
             name="New London County"
             color="gray"
-            confirmedCases="0"
+            confirmedCases={dict['New London']}
           />
           <Marker
             lat={41.87149}
             lng={-72.36869}
             name="Tolland County"
             color="gray"
-            confirmedCases="0"
+            confirmedCases={dict['Tolland']}
             />
           <Marker
             lat={41.7106543}
             lng={-72.2081338}
             name="Windham County"
             color="gray"
-            confirmedCases="0"         
+            confirmedCases={dict['Windham']}        
             />
         </GoogleMapReact>
       </div>
