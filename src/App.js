@@ -1,5 +1,5 @@
 import React from 'react';
-// import Chart from './chart.js'
+import Chart from './chart.js'
 import SimpleMap from './map.js';
 import CountyTable from './table.js'
 
@@ -8,7 +8,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: "Sick Chart Bro",
+            title: "Connecticut COVID-19",
             positiveXValues: [],
             timeYValues: [],
         }
@@ -86,11 +86,11 @@ class App extends React.Component {
                 <br/><br/><br/><br/>
                 <CountyTable></CountyTable>
                 {/* {this.createCharTable()} */}
-                {/* <Chart
+                <Chart
                     title={this.state.title}
                     positiveXValues={this.state.positiveXValues}
                     timeYValues={this.state.timeYValues}
-                ></Chart> */}
+                ></Chart>
             </div>
         )
     }
