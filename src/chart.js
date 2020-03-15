@@ -14,9 +14,9 @@ class Chart extends React.Component {
     }
 
     render() {
-        const dates = ['03/07', '03/08', '03/09', '03/10', '03/11', '03/12', '03/13', '03/14']
-        const confirmed = [0, 1, 2, 2, 3, 6, 11, 23]
-        const deaths = [0,0,0,0,0,0,0,0]
+        const dates = ['03/07', '03/08', '03/09', '03/10', '03/11', '03/12', '03/13', '03/14', '03/15']
+        const confirmed = [0, 1, 2, 2, 3, 6, 11, 23, 24]
+        const deaths = [0,0,0,0,0,0,0,0,0]
         return (
             <div className="chart">
                 <Plot
