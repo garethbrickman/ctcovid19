@@ -2,6 +2,7 @@ import React from 'react';
 import Chart from './chart.js'
 import SimpleMap from './map.js';
 import CountyTable from './table.js'
+import './App.css';
 
 
 class App extends React.Component {
@@ -84,13 +85,14 @@ class App extends React.Component {
                 </header>
                 <SimpleMap></SimpleMap>
                 <br/><br/><br/><br/>
-                <CountyTable></CountyTable>
+                {/* <CountyTable></CountyTable> */}
                 {/* {this.createCharTable()} */}
                 <Chart
                     title={this.state.title}
                     positiveXValues={this.state.positiveXValues}
                     timeYValues={this.state.timeYValues}
                 ></Chart>
+                <CountyTable></CountyTable>
             </div>
         )
     }
