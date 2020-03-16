@@ -18,7 +18,7 @@ class Chart extends React.Component {
         const confirmed = [0, 1, 2, 2, 3, 6, 11, 23, 27]
         const deaths = [0,0,0,0,0,0,0,0,0]
         return (
-            <div className="chart">
+            <div className="timeline">
                 <Plot
                     data={[
                         {
