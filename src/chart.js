@@ -42,7 +42,8 @@ class Chart extends React.Component {
                     layout={
                         {title: this.state.title + ' Chart',
                         xaxis: {fixedrange: true},
-                        yaxis: {fixedrange: true}}
+                        yaxis: {fixedrange: true},
+                        margin: {l: 35}}
                     }
                     style={{width: '100%', height: '100%'}}
                     config={{responsive: true}}
