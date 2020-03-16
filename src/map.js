@@ -14,7 +14,7 @@ class SimpleMap extends Component {
   };
  
   render() {
-    const dict = require('./m20200315.json')
+    const dict = require('./m20200316.json')
     var total = 0
     for(let value of Object.values(dict)){
       total += value;
@@ -23,7 +23,7 @@ class SimpleMap extends Component {
     return (
       // Important! Always set the container height explicitly
       <div className="map" style={{ height: '100vh', width: '100%' }}>
-        <h1>Counties with Positive Cases as of March 15th, 2020 | Total cases = {total}</h1>
+        <h1>Counties with Positive Cases as of March 16th, 2020 | Total cases = {total}</h1>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyAFl0p7Zj1aSMscGUdeWlGkrhqZrFyogZg' }}
             defaultCenter={this.props.center}

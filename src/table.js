@@ -10,7 +10,7 @@ class CountyTable extends React.Component {
         }
     }
     createTable() {
-        const dict = require('./m20200315.json')
+        const dict = require('./m20200316.json')
         var total = 0
         for(let value of Object.values(dict)){
             total += value;
