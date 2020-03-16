@@ -92,6 +92,7 @@ class Dashboard extends React.Component {
                     positiveXValues={this.state.positiveXValues}
                     timeYValues={this.state.timeYValues}
                 ></Chart>
+                <br/>
                 <CountyTable></CountyTable>
             </div>
         )

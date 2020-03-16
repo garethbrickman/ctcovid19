@@ -25,8 +25,10 @@ class CountyTable extends React.Component {
 
         const table = (
             <div>
-                <h1>Counties Test and Positive Cases as of March 13th, 2020</h1>
-                <table>
+                
+                <table class="table">
+                    <h1>Counties Test and Positive Cases as of March 13th, 2020 (NO UPDATES)</h1>
+                    <tbody>
                     <col></col>
                     <colgroup span="2"></colgroup>
                     <colgroup span="2"></colgroup>
@@ -135,6 +137,10 @@ class CountyTable extends React.Component {
                         <td>{totalStateNeg + totalComercialNeg}</td>
                         <td>{totalStateNeg + totalComercialNeg + totalStatePos + totalComercialPos}</td>
                     </tr>
+                    </tbody>
+                    <tfoot>
+                        *source: <a href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a> (No updates on test data)
+                    </tfoot>
                 </table>
             </div>
         )
