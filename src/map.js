@@ -22,7 +22,7 @@ class SimpleMap extends Component {
     // const total = dict => Object.values(dict).reduce((a, b) => a + b);
     return (
       // Important! Always set the container height explicitly
-      <div className="map" style={{ height: '100vh', width: '90%' }}>
+      <div className="map" style={{ height: '100vh', width: '100%' }}>
         <h1>Counties with Positive Cases as of March 15th, 2020 | Total cases = {total}</h1>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyAFl0p7Zj1aSMscGUdeWlGkrhqZrFyogZg' }}

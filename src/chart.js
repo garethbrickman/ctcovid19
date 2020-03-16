@@ -24,9 +24,9 @@ class Chart extends React.Component {
                         {
                             x: dates,
                             y: confirmed,
-                            //type: 'scatter',
+                            type: 'line',
                             //mode: 'lines+markers',
-                            marker: {color: 'blue'},
+                            marker: {color: 'blue', line: {width: 2.5}},
                             name: 'Confirmed Cases'
                         },
                         {
@@ -43,6 +43,7 @@ class Chart extends React.Component {
                         xaxis: {fixedrange: true},
                         yaxis: {fixedrange: true}}
                     }
+                    config={{responsive: true}}
                 />
             </div>
         )
