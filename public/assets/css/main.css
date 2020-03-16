@@ -964,6 +964,30 @@
 		white-space: nowrap;
 		margin-bottom: 10px;
 	}
+	.button2 {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #f1952c;
+		border-radius: 4px;
+		border: 0;
+		color: #000000 !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 400;
+		height: 2.85em;
+		line-height: 2.95em;
+		padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+		margin-bottom: 10px;
+	}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -971,6 +995,9 @@
 		button:hover,
 		.button:hover {
 			background-color: #82cec6;
+		}
+		.button2:hover{
+		background-color: #e6b379;
 		}
 
 		input[type="submit"]:active,
