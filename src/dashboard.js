@@ -87,13 +87,14 @@ class Dashboard extends React.Component {
                 <br/><br/><br/><br/>
                 {/* <CountyTable></CountyTable> */}
                 {/* {this.createCharTable()} */}
-                <Chart
-                    title={this.state.title}
-                    positiveXValues={this.state.positiveXValues}
-                    timeYValues={this.state.timeYValues}
-                ></Chart>
-                <br/>
-                <CountyTable></CountyTable>
+                <div className="tableChartContainer">
+                    <Chart
+                        title={this.state.title}
+                        positiveXValues={this.state.positiveXValues}
+                        timeYValues={this.state.timeYValues}
+                    ></Chart>
+                    <CountyTable></CountyTable>
+                </div>
             </div>
         )
     }

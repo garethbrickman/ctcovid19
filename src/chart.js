@@ -1,6 +1,6 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
-import './chart.css';
+// import './chart.css';
 
 
 class Chart extends React.Component {
@@ -18,7 +18,7 @@ class Chart extends React.Component {
         const confirmed = [0, 1, 2, 2, 3, 6, 11, 23, 27]
         const deaths = [0,0,0,0,0,0,0,0,0]
         return (
-            <div className="timeline">
+            <div className="chart">
                 <Plot
                     data={[
                         {
@@ -27,7 +27,7 @@ class Chart extends React.Component {
                             type: 'line',
                             //mode: 'lines+markers',
                             marker: {color: 'blue', line: {width: 2.5}},
-                            name: 'Confirmed Cases'
+                            name: 'Confirmed'
                         },
                         {
                             x: dates,
@@ -40,10 +40,13 @@ class Chart extends React.Component {
                     ]}
                     layout={
                         {title: this.state.title + ' Chart',
+                        autosize: false,
+                        height: 400,
+                        width: 500,
+                        margin: {l: 35, r: 35, b: 75, t: 75, pad: 4},
                         xaxis: {fixedrange: true},
                         yaxis: {fixedrange: true}}
                     }
-                    config={{responsive: true}}
                 />
             </div>
         )
