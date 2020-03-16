@@ -12,14 +12,15 @@ class Chart extends React.Component {
             timeYValues: [],
         }
     }
-
+    
     render() {
         const dates = ['03/07', '03/08', '03/09', '03/10', '03/11', '03/12', '03/13', '03/14', '03/15']
         const confirmed = [0, 1, 2, 2, 3, 6, 11, 23, 27]
         const deaths = [0,0,0,0,0,0,0,0,0]
         return (
-            <div className="chart">
+            <div style={{width: '700px', height: '100%'}}>
                 <Plot
+                    useResizeHandler
                     data={[
                         {
                             x: dates,
@@ -40,13 +41,11 @@ class Chart extends React.Component {
                     ]}
                     layout={
                         {title: this.state.title + ' Chart',
-                        autosize: false,
-                        height: 400,
-                        width: 500,
-                        margin: {l: 35, r: 35, b: 75, t: 75, pad: 4},
                         xaxis: {fixedrange: true},
                         yaxis: {fixedrange: true}}
                     }
+                    style={{width: '100%', height: '100%'}}
+                    config={{responsive: true}}
                 />
             </div>
         )

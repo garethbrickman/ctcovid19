@@ -11,7 +11,7 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="entireview">
                 <header className="App-header">
                 </header>
                 <Dashboard></Dashboard>

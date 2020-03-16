@@ -41,13 +41,9 @@
 }
 
 .tableChartContainer {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-.chart {
-  display: flex;
-  height: 100%;
-  width: auto;
 }
