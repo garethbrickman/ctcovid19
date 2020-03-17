@@ -24,7 +24,7 @@ class SimpleMap extends Component {
       // Important! Always set the container height explicitly
       <div style={{width: "100%"}}>
         <h2 style={{paddingTop: '12px', backgroundColor: '#16161d', font: '50', fontWeight: 'bold', color: 'orange', border: 'solid #16161d 2px'}}>{total}<h1 style={{textAlign: 'center'}}>Confirmed</h1></h2>
-        <h1>Counties with Positive Cases as of March 16th, 2020</h1>
+        <h1>Counties with Positive Cases as of March 17th, 2020</h1>
         <div className="map" style={{ height: '80vh', width: '100%'}}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyAFl0p7Zj1aSMscGUdeWlGkrhqZrFyogZg' }}

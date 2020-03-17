@@ -20,7 +20,7 @@ class CountyTable extends React.Component {
             <div style={{marginTop: '50px'}}>
                 
                 <table class="table">
-                    <h1>Counties Test and Positive Cases as of March 16th, 2020</h1>
+                    <h1>Counties Test and Positive Cases as of March 17th, 2020</h1>
                     <tbody>
                     <col></col>
                     <colgroup span="2"></colgroup>
