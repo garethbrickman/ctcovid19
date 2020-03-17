@@ -18,7 +18,7 @@ class Chart extends React.Component {
         const confirmed = [0, 1, 2, 2, 3, 6, 11, 23, 27, 41]
         const deaths = [0,0,0,0,0,0,0,0,0,0]
         return (
-            <div style={{width: '700px', height: '100%'}}>
+            <div style={{width: '700px', height: '100%', marginTop: '20px'}}>
                 <Plot
                     useResizeHandler
                     data={[

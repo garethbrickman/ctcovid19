@@ -41,9 +41,15 @@
 }
 
 .tableChartContainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  align-content: center;
+  justify-content: space-evenly;
+  border-top: #70c7be solid 2px;
+  border-bottom: #70c7be solid 2px;
 }

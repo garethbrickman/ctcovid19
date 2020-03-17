@@ -22,12 +22,15 @@ class SimpleMap extends Component {
     // const total = dict => Object.values(dict).reduce((a, b) => a + b);
     return (
       // Important! Always set the container height explicitly
-      <div className="map" style={{ height: '100vh', width: '100%' }}>
-        <h1>Counties with Positive Cases as of March 16th, 2020 | Total cases = {total}</h1>
+      <div style={{width: "100%"}}>
+        <h2 style={{paddingTop: '12px', backgroundColor: '#16161d', font: '50', fontWeight: 'bold', color: 'orange', border: 'solid #16161d 2px'}}>{total}<h1 style={{textAlign: 'center'}}>Confirmed</h1></h2>
+        <h1>Counties with Positive Cases as of March 16th, 2020</h1>
+        <div className="map" style={{ height: '80vh', width: '100%'}}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyAFl0p7Zj1aSMscGUdeWlGkrhqZrFyogZg' }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
+            heatmapLibrary={true}
           >
             <Marker
               lat={41.310726}
@@ -93,13 +96,13 @@ class SimpleMap extends Component {
               confirmedCases={dict['Windham']}        
             />
           </GoogleMapReact>
-        <div>
-          <p>
-            source: <a class="link" href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a><br/>
-            source for New Haven: <a class="link" href="https://www.wtnh.com/news/connecticut/new-haven/yale-says-member-of-university-tests-positive-for-covid-19/">https://www.wtnh.com/news/connecticut/new-haven/yale-says-member-of-university-tests-positive-for-covid-19/</a><br/>
-            <br/>
-          </p>
-          <p></p>
+          <div>
+            <p>
+              sources: <a class="link" href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a><br/>
+              sources: <a class="link" href="https://www.wfsb.com/news/timeline-more-coronavirus-cases-confirmed-in-ct/article_54edec52-67ad-11ea-8482-877cb5d00dcd.html">WFSB.com</a>
+            </p>
+            <p></p>
+          </div>
         </div>
       </div>
     );
