@@ -14,7 +14,7 @@ class SimpleMap extends Component {
   };
  
   render() {
-    const dict = require('./m20200316.json')
+    const dict = require('./m20200317.json')
     var total = 0
     for(let value of Object.values(dict)){
       total += value;

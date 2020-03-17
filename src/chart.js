@@ -14,9 +14,9 @@ class Chart extends React.Component {
     }
     
     render() {
-        const dates = ['03/07', '03/08', '03/09', '03/10', '03/11', '03/12', '03/13', '03/14', '03/15', '03/16']
-        const confirmed = [0, 1, 2, 2, 3, 6, 11, 23, 27, 41]
-        const deaths = [0,0,0,0,0,0,0,0,0,0]
+        const dates = ['03/07', '03/08', '03/09', '03/10', '03/11', '03/12', '03/13', '03/14', '03/15', '03/16', '03/17']
+        const confirmed = [0, 1, 2, 2, 3, 6, 11, 23, 27, 41, 41]
+        const deaths = [0,0,0,0,0,0,0,0,0,0,0]
         return (
             <div style={{width: '700px', height: '100%', marginTop: '20px'}}>
                 <Plot
@@ -28,7 +28,7 @@ class Chart extends React.Component {
                             type: 'line',
                             //mode: 'lines+markers',
                             marker: {color: 'blue', line: {width: 2.5}},
-                            name: 'Confirmed'
+                            name: 'Confirmed Cases'
                         },
                         {
                             x: dates,
@@ -43,7 +43,11 @@ class Chart extends React.Component {
                         {title: this.state.title + ' Chart',
                         xaxis: {fixedrange: true},
                         yaxis: {fixedrange: true},
-                        margin: {l: 35}}
+                        margin: {l: 35, r: 35},
+                        legend: {
+                            x:0,
+                            y:1
+                        }}
                     }
                     style={{width: '100%', height: '100%'}}
                     config={{responsive: true}}
