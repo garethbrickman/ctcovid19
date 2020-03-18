@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker.js'
-import './map.css';
 
 
 class SimpleMap extends Component {
@@ -14,7 +13,7 @@ class SimpleMap extends Component {
   };
  
   render() {
-    const dict = require('./m20200317.json')
+    const dict = require('./data/m20200317.json')
     var total = 0
     for(let value of Object.values(dict)){
       total += value;
