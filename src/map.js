@@ -13,7 +13,7 @@ class SimpleMap extends Component {
   };
  
   render() {
-    const dict = require('./data/m20200317.json')
+    const dict = require('./data/m20200318.json')
     var total = 0
     for(let value of Object.values(dict)){
       total += value;
@@ -98,7 +98,7 @@ class SimpleMap extends Component {
           <div>
             <p>
               sources: <a class="link" href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a><br/>
-              sources: <a class="link" href="https://www.wfsb.com/news/timeline-more-coronavirus-cases-confirmed-in-ct/article_54edec52-67ad-11ea-8482-877cb5d00dcd.html">WFSB.com</a>
+              sources: <a class="link" href="https://www.courant.com/coronavirus/hc-news-coronavirus-updates-0318-20200318-kna3blejebg4rh6z24rsfapymq-story.html">First Ct Death</a>
             </p>
             <p></p>
           </div>
