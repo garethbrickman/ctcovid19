@@ -20,7 +20,7 @@ class CountyTable extends React.Component {
             <div style={{marginTop: '50px'}}>
                 
                 <table class="table">
-                    <h1>Counties Test and Positive Cases as of March 17th, 2020</h1>
+                    <h1>Counties Test and Positive Cases as of March 18th, 2020</h1>
                     <tbody>
                     <col></col>
                     <colgroup span="2"></colgroup>
@@ -39,7 +39,7 @@ class CountyTable extends React.Component {
                         <th scope="row">Fairfield</th>
                         <td>{dict["Fairfield"]}</td>
                         <td>N/A</td>
-                        <td>0</td>
+                        <td>1</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
