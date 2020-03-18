@@ -95,7 +95,7 @@ class CountyTable extends React.Component {
                         <th scope="row">Totals</th>
                         <td>{total}</td>
                         <td>N/A</td>
-                        <td>0</td>
+                        <td>1</td>
                         <td>N/A</td>
                     </tr>
                     </tbody>
