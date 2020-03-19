@@ -14,8 +14,7 @@ class SimpleMap extends Component {
  
   render() {
     const dict = require('./data/m20200319.json')
-    var tempDate = new Date()
-    var date = 'March ' + tempDate.getDate() + ', ' + tempDate.getFullYear() +' '+ ((tempDate.getHours() + 11) % 12 + 1)+':'+ tempDate.getMinutes() + 'pm'
+    const date = 'March 19th, 2020 5:14pm'
     var total = 0
     for(let value of Object.values(dict)){
       total += value;
