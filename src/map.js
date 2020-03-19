@@ -11,9 +11,13 @@ class SimpleMap extends Component {
     },
     zoom: 8
   };
- 
+  addCommas(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  }
   render() {
     const dict = require('./data/m20200319.json')
+    const usa_dict = require('./data/usa_20200319.json')
+    const global_dict = require('./data/global_20200319.json')
     const date = 'March 19th, 2020 5:14pm'
     var total = 0
     for(let value of Object.values(dict)){
@@ -23,8 +27,13 @@ class SimpleMap extends Component {
     return (
       // Important! Always set the container height explicitly
       <div style={{width: "100%"}}>
-        <h2 style={{paddingTop: '12px', backgroundColor: '#16161d', font: '50', fontWeight: 'bold', color: 'orange', border: 'solid #16161d 2px'}}>{dict['Total']}<h1 style={{textAlign: 'center'}}>Confirmed</h1></h2>
-        <h1>Counties with Positive Cases as of {date}</h1>
+        <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', paddingTop: '20px', backgroundColor: '#16161d', width: '100%'}}>
+          <h2 style={{margin: 'auto', font: '50', fontWeight: 'bold', color: 'orange', border: 'solid #16161d 2px'}}>{this.addCommas(dict['Total'])}<h1 style={{textAlign: 'center'}}>Confirmed CT</h1></h2>
+          <h2 style={{margin: 'auto', font: '50', fontWeight: 'bold', color: 'orange', border: 'solid #16161d 2px'}}>{this.addCommas(usa_dict['cases'])}<h1 style={{textAlign: 'center'}}>Confirmed USA</h1></h2>
+          <h2 style={{margin: 'auto', font: '50', fontWeight: 'bold', color: 'orange', border: 'solid #16161d 2px'}}>{this.addCommas(global_dict['cases'])}<h1 style={{textAlign: 'center'}}>Confirmed Global</h1></h2>
+        </div>
+        <h1 style={{marginBottom: '50px', color: 'gray'}}>Source: <a class='link' href='https://www.worldometers.info/coronavirus/country/us/'>worldometer</a></h1>
+        <h2>Counties with Positive Cases as of {date}</h2>
         <div className="map" style={{ height: '80vh', width: '100%'}}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyAFl0p7Zj1aSMscGUdeWlGkrhqZrFyogZg' }}
