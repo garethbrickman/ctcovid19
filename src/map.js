@@ -13,7 +13,9 @@ class SimpleMap extends Component {
   };
  
   render() {
-    const dict = require('./data/m20200318.json')
+    const dict = require('./data/m20200319.json')
+    var tempDate = new Date()
+    var date = 'March ' + tempDate.getDate() + ', ' + tempDate.getFullYear() +' '+ ((tempDate.getHours() + 11) % 12 + 1)+':'+ tempDate.getMinutes() + 'pm'
     var total = 0
     for(let value of Object.values(dict)){
       total += value;
@@ -22,8 +24,8 @@ class SimpleMap extends Component {
     return (
       // Important! Always set the container height explicitly
       <div style={{width: "100%"}}>
-        <h2 style={{paddingTop: '12px', backgroundColor: '#16161d', font: '50', fontWeight: 'bold', color: 'orange', border: 'solid #16161d 2px'}}>{total}<h1 style={{textAlign: 'center'}}>Confirmed</h1></h2>
-        <h1>Counties with Positive Cases as of March 18th, 2020</h1>
+        <h2 style={{paddingTop: '12px', backgroundColor: '#16161d', font: '50', fontWeight: 'bold', color: 'orange', border: 'solid #16161d 2px'}}>{dict['Total']}<h1 style={{textAlign: 'center'}}>Confirmed</h1></h2>
+        <h1>Counties with Positive Cases as of {date}</h1>
         <div className="map" style={{ height: '80vh', width: '100%'}}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyAFl0p7Zj1aSMscGUdeWlGkrhqZrFyogZg' }}
@@ -98,7 +100,7 @@ class SimpleMap extends Component {
           <div>
             <p>
               sources: <a class="link" href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a><br/>
-              sources: <a class="link" href="https://www.courant.com/coronavirus/hc-news-coronavirus-updates-0318-20200318-kna3blejebg4rh6z24rsfapymq-story.html">First Ct Death</a>
+              sources: <a class="link" href="https://www.nbcconnecticut.com/news/coronavirus/91-new-canaan-man-is-second-connecticut-coronavirus-death-governor/2241399/">Second Ct Death</a>
             </p>
             <p></p>
           </div>

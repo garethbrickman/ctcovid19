@@ -16,6 +16,11 @@ class Dashboard extends React.Component {
     }
 
     render() {
+        const dict = require('./data/m20200319.json')
+        var total = 0
+        for(let value of Object.values(dict)){
+            total += value;
+        }
         return (
             <div className="App">
                 <header className="App-header">

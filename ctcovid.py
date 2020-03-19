@@ -1,8 +1,6 @@
-import requests
-from bs4 import BeautifulSoup
 import datetime
+import pandas as pd
 import json
-
 
 # converts dict to json
 def to_json_string(list_dictionaries):
@@ -17,39 +15,40 @@ def save_to_file(LO_dict, name):
     with open(name + ".json", "w") as f:
         f.write(to_json_string(LO_dict))
     print(f"Saved to {name}.json")
-def get_covid_data():
+    
+def get_table():
     url = "https://portal.ct.gov/Coronavirus"
+    df = pd.read_html(url, skiprows=1)[0] # gets df from table
 
-    res = requests.get(url)
-    soup = BeautifulSoup(res.content, features="lxml")
+    new_header = df.iloc[0] # grab the first row for the header
+    df = df[1:] # take the data less the header row
+    df.columns = new_header # set the header row as the df header
+    df.set_index('County', inplace=True) # sets County column as index
 
-    html = soup.find(class_="callout primary")
-
-    county_list = html.find("li").find("ul").find_all("li")
+    county_dict = df.to_dict() # set to dict
+    county_dict = county_dict["Positive Cases"] #Get dict inside Psitive Cases
 
     county_data = {
-        "Fairfield":0,
-        "Hartford":0,
-        "Litchfield":0,
-        "Middlesex":0,
-        "New Haven":0,
-        "New London":0,
-        "Tolland":0,
-        "Windham":0
-    }
+            "Fairfield":0,
+            "Hartford":0,
+            "Litchfield":0,
+            "Middlesex":0,
+            "New Haven":0,
+            "New London":0,
+            "Tolland":0,
+            "Windham":0
+        }
+    # handle formating
+    for county, count in county_dict.items():
+        if county != "Total":
+            county = county[:-7] # get rid of " county" in the key
+        county_data[county] = int(count)
 
-    for county in county_list:
-        text = county.text.split(":")
-        key = text[0][:-7]
-        county_data[key] = int(text[1].strip())
-    county_data
+    now = datetime.datetime.now() # get date
+    name = "src/data/" # add directory
+    name += "m" + str(now).split()[0].replace("-","") # create name using date
 
-
-    now = datetime.datetime.now()
-    name = "src/data/"
-    name += "m" + str(now).split()[0].replace("-","")
-
-    save_to_file(county_data, name)
+    save_to_file(county_data, name) # save to file
     
 if __name__ == "__main__":
-    get_covid_data()
+    get_table()
