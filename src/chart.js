@@ -16,7 +16,7 @@ class Chart extends React.Component {
         const dict = require('./data/m20200319.json')
         const dates = ['03/07', '03/08', '03/09', '03/10', '03/11', '03/12', '03/13', '03/14', '03/15', '03/16', '03/17', '03/18', '03/19']
         const confirmed = [0, 1, 2, 2, 3, 6, 11, 23, 27, 41, 68, 96, 159]
-        const deaths = [0,0,0,0,0,0,0,0,0,0,0,1,2]
+        const deaths = [0,0,0,0,0,0,0,0,0,0,0,1,3]
         return (
             <div style={{width: '700px', height: '100%', marginTop: '20px'}}>
                 <Plot
