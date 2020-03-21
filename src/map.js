@@ -18,7 +18,7 @@ class SimpleMap extends Component {
     const dict = require('./data/m20200321.json')
     const usa_dict = require('./data/usa_20200321.json')
     const global_dict = require('./data/global_20200321.json')
-    const date = 'March 21st, 2020 6:35pm'
+    const date = 'March 21st, 2020 7:35pm'
     var total = 0
     for(let value of Object.values(dict)){
       total += value;
