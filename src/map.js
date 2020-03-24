@@ -108,7 +108,6 @@ class SimpleMap extends Component {
           <div>
             <p>
               sources: <a class="link" href="https://portal.ct.gov/coronavirus">https://portal.ct.gov/coronavirus</a><br/>
-              sources: <a class="link" href="https://www.ctpost.com/local/article/Government-watchdogs-ask-for-freer-15145759.php">4th Ct Death</a>
             </p>
             <p></p>
           </div>
