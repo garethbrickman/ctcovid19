@@ -14,9 +14,10 @@ class Chart extends React.Component {
     
     render() {
         const dict = require('./data/m20200324.json')
-        const dates = ['03/07', '03/08', '03/09', '03/10', '03/11', '03/12', '03/13', '03/14', '03/15', '03/16', '03/17', '03/18', '03/19', '03/20', '03/21', '03/22', '03/23', '03/24']
-        const confirmed = [0, 1, 2, 2, 3, 6, 11, 23, 27, 41, 68, 96, 159, 194,223,327,415, 618]
-        const deaths = [0,0,0,0,0,0,0,0,0,0,0,1,3,4,5,8,10, 12]
+        const dates = ['03/08', '03/09', '03/10', '03/11', '03/12', '03/13', '03/14', '03/15', '03/16', '03/17', '03/18', '03/19', '03/20', '03/21', '03/22', '03/23', '03/24']
+        const confirmed = [1, 2, 2, 3, 6, 11, 23, 27, 41, 68, 96, 159, 194,223,327,415, 618]
+        const deaths = [0,0,0,0,0,0,0,0,0,0,1,3,4,5,8,10, 12]
+        const newCase = [1, 1, 0, 1, 3, 5, 12, 4, 14, 27, 28, 63, 35, 29, 104, 88, 203]
         return (
             <div style={{width: '700px', height: '100%', marginTop: '20px'}}>
                 <Plot
@@ -37,6 +38,14 @@ class Chart extends React.Component {
                             //mode: 'lines+markers',
                             marker: {color: 'red'},
                             name: 'Deaths'
+                        },
+                        {
+                            x: dates,
+                            y: newCase,
+                            //type: 'scatter',
+                            //mode: 'lines+markers',
+                            marker: {color: 'purple'},
+                            name: 'New Cases'
                         },
                     ]}
                     layout={
