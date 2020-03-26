@@ -2,6 +2,7 @@ import React from 'react';
 import Chart from './chart.js'
 import SimpleMap from './map.js';
 import CountyTable from './table.js'
+import BarChart from './barchart.js'
 import './App.css';
 
 
@@ -33,6 +34,11 @@ class Dashboard extends React.Component {
                         positiveXValues={this.state.positiveXValues}
                         timeYValues={this.state.timeYValues}
                     ></Chart>
+                    <BarChart
+                        title={"Cases by Age Group"}
+                        positiveXValues={this.state.positiveXValues}
+                        timeYValues={this.state.timeYValues}
+                    ></BarChart>
                     <CountyTable></CountyTable>
                 </div>
             </div>
