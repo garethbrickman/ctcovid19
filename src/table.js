@@ -10,9 +10,9 @@ class CountyTable extends React.Component {
         }
     }
     createTable() {
-        const dict = require('./data/m20200329.json')
+        const dict = require('./data/m20200330.json')
         var tempDate = new Date()
-        var date = 'March 29th, 2020 5:15pm'
+        var date = 'March 30th, 2020 4:30pm'
         var total = 0
         for(let value of Object.values(dict)){
             total += value;
@@ -48,14 +48,14 @@ class CountyTable extends React.Component {
                         <th scope="row">Hartford</th>
                         <td>{dict["Hartford"]}</td>
                         <td>N/A</td>
-                        <td>2</td>
+                        <td>3</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Litchfield</th>
                         <td>{dict["Litchfield"]}</td>
                         <td>N/A</td>
-                        <td>0</td>
+                        <td>1</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
@@ -97,7 +97,7 @@ class CountyTable extends React.Component {
                         <th scope="row">Totals</th>
                         <td>{dict['Total']}</td>
                         <td>N/A</td>
-                        <td>34</td>
+                        <td>36</td>
                         <td>N/A</td>
                     </tr>
                     </tbody>

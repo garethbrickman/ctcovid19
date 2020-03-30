@@ -15,9 +15,9 @@ class BarChart extends React.Component {
     render() {
         const dict = require('./data/m20200329.json')
         const ages = ["0-9", "10-19", "20-29", "30-39", "40-49", "50-59", "60-69", "70-79", ">=80"]
-        const confirmed = [20, 48, 239, 308, 324, 428, 314, 172, 140]
+        const confirmed = [27, 58, 320, 403, 427, 550, 406, 221, 159]
         const hospital = [0, 2, 5, 12, 19, 37, 42, 46, 42]
-        const deaths = [0,0,0,0,1,2,2,7,22]
+        const deaths = [0,0,0,1,1,3,1,7,23]
         return (
             <div style={{width: '700px', height: '100%', marginTop: '20px'}}>
                 <Plot
@@ -31,14 +31,14 @@ class BarChart extends React.Component {
                             marker: {color: '#08d9d6'},
                             name: 'Confirmed Cases'
                         },
-                        {
-                            x: ages,
-                            y: hospital,
-                            type: 'bar',
-                            //mode: 'lines+markers',
-                            marker: {color: '#252a34'},
-                            name: 'Hospitalizations *3/28*'
-                        },
+                        // {
+                        //     x: ages,
+                        //     y: hospital,
+                        //     type: 'bar',
+                        //     //mode: 'lines+markers',
+                        //     marker: {color: '#252a34'},
+                        //     name: 'Hospitalizations *3/28*'
+                        // },
                         {
                             x: ages,
                             y: deaths,
