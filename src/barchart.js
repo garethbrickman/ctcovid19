@@ -13,11 +13,11 @@ class BarChart extends React.Component {
     }
     
     render() {
-        const dict = require('./data/m20200404.json')
+        const dict = require('./data/m20200405.json')
         const ages = ["0-9", "10-19", "20-29", "30-39", "40-49", "50-59", "60-69", "70-79", ">=80"]
-        const confirmed = [47, 106, 607, 801, 900, 1084, 829, 441, 391]
+        const confirmed = [49, 113, 639, 856, 963, 1152, 896, 475, 463]
         const hospital = [0, 2, 5, 12, 19, 37, 42, 46, 42]
-        const deaths = [1,0,0,2,6,7,23,41,85]
+        const deaths = [1,0,0,1,7,9,27,47,97]
         return (
             <div style={{width: '700px', height: '100%', marginTop: '20px'}}>
                 <Plot
