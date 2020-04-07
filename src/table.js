@@ -10,9 +10,9 @@ class CountyTable extends React.Component {
         }
     }
     createTable() {
-        const dict = require('./data/m20200406.json')
+        const dict = require('./data/m20200407.json')
         var tempDate = new Date()
-        var date = 'April 6th, 2020 4:15pm'
+        var date = 'April 7th, 2020 4:15pm'
         var total = 0
         for(let value of Object.values(dict)){
             total += value;
@@ -41,21 +41,21 @@ class CountyTable extends React.Component {
                         <th scope="row">Fairfield</th>
                         <td>{dict["Fairfield"]}</td>
                         <td>N/A</td>
-                        <td>101</td>
+                        <td>132</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Hartford</th>
                         <td>{dict["Hartford"]}</td>
                         <td>N/A</td>
-                        <td>31</td>
+                        <td>48</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Litchfield</th>
                         <td>{dict["Litchfield"]}</td>
                         <td>N/A</td>
-                        <td>8</td>
+                        <td>9</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
@@ -69,7 +69,7 @@ class CountyTable extends React.Component {
                         <th scope="row">New Haven</th>
                         <td>{dict["New Haven"]}</td>
                         <td>N/A</td>
-                        <td>41</td>
+                        <td>60</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
@@ -95,17 +95,17 @@ class CountyTable extends React.Component {
                     </tr>
                     <tr>
                         <th scope="row">Pending location</th>
-                        <td>264</td>
+                        <td>292</td>
                         <td>N/A</td>
-                        <td>0</td>
+                        <td>3</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Totals</th>
                         <td>{dict['Total']}</td>
                         <td>N/A</td>
-                        <td>206</td>
-                        <td>26686</td>
+                        <td>277</td>
+                        <td>29036</td>
                     </tr>
                     </tbody>
                     <tfoot>
