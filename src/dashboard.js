@@ -17,7 +17,7 @@ class Dashboard extends React.Component {
     }
 
     render() {
-        const dict = require('./data/m20200407.json')
+        const dict = require('./data/m20200408.json')
         var total = 0
         for(let value of Object.values(dict)){
             total += value;
