@@ -41,14 +41,14 @@ class CountyTable extends React.Component {
                         <th scope="row">Fairfield</th>
                         <td>{dict["Fairfield"]}</td>
                         <td>N/A</td>
-                        <td>432</td>
+                        <td>447</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Hartford</th>
                         <td>{dict["Hartford"]}</td>
                         <td>N/A</td>
-                        <td>289</td>
+                        <td>295</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
@@ -62,14 +62,14 @@ class CountyTable extends React.Component {
                         <th scope="row">Middlesex</th>
                         <td>{dict["Middlesex"]}</td>
                         <td>N/A</td>
-                        <td>37</td>
+                        <td>40</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">New Haven</th>
                         <td>{dict["New Haven"]}</td>
                         <td>N/A</td>
-                        <td>241</td>
+                        <td>257</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
@@ -95,17 +95,17 @@ class CountyTable extends React.Component {
                     </tr>
                     <tr>
                         <th scope="row">Pending location</th>
-                        <td>525</td>
+                        <td>529</td>
                         <td>N/A</td>
-                        <td>3</td>
+                        <td>4</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Totals</th>
                         <td>{dict['Total']}</td>
                         <td>N/A</td>
-                        <td>1086</td>
-                        <td>58213</td>
+                        <td>1127</td>
+                        <td>59759</td>
                     </tr>
                     </tbody>
                     <tfoot>
