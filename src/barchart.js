@@ -13,7 +13,7 @@ class BarChart extends React.Component {
     }
     
     render() {
-        const dict = require('./data/m20200419.json')
+        const dict = require('./data/m20200420.json')
         const ages = ["0-9", "10-19", "20-29", "30-39", "40-49", "50-59", "60-69", "70-79", ">=80"]
         const confirmed = [138, 349, 1884, 2520, 2846, 3433, 2871, 1662, 2095]
         const hospital = [0, 2, 5, 12, 19, 37, 42, 46, 42]
