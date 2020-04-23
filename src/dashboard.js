@@ -35,7 +35,7 @@ class Dashboard extends React.Component {
                         timeYValues={this.state.timeYValues}
                     ></Chart>
                     <BarChart
-                        title={"Cases by Age Group *as of 4/19/2020"}
+                        title={"Cases by Age Group"}
                         positiveXValues={this.state.positiveXValues}
                         timeYValues={this.state.timeYValues}
                     ></BarChart>
