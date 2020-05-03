@@ -15,10 +15,10 @@ class SimpleMap extends Component {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
   }
   render() {
-    const dict = require('./data/m20200501.json')
-    const usa_dict = require('./data/usa_20200501.json')
-    const global_dict = require('./data/global_20200501.json')
-    const date = 'May 1st, 2020 5:30pm'
+    const dict = require('./data/m20200502.json')
+    const usa_dict = require('./data/usa_20200502.json')
+    const global_dict = require('./data/global_20200502.json')
+    const date = 'May 2nd, 2020 6:30pm'
     var total = 0
     for(let value of Object.values(dict)){
       total += value;
