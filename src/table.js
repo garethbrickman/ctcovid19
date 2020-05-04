@@ -10,9 +10,9 @@ class CountyTable extends React.Component {
         }
     }
     createTable() {
-        const dict = require('./data/m20200502.json')
+        const dict = require('./data/m20200504.json')
         var tempDate = new Date()
-        var date = 'May 2nd, 2020 6:30pm'
+        var date = 'May 4th, 2020 6:30pm'
         var total = 0
         for(let value of Object.values(dict)){
             total += value;
@@ -41,71 +41,71 @@ class CountyTable extends React.Component {
                         <th scope="row">Fairfield</th>
                         <td>{dict["Fairfield"]}</td>
                         <td>N/A</td>
-                        <td>865</td>
+                        <td>910</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Hartford</th>
                         <td>{dict["Hartford"]}</td>
                         <td>N/A</td>
-                        <td>741</td>
+                        <td>773</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Litchfield</th>
                         <td>{dict["Litchfield"]}</td>
                         <td>N/A</td>
-                        <td>89</td>
+                        <td>94</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Middlesex</th>
                         <td>{dict["Middlesex"]}</td>
                         <td>N/A</td>
-                        <td>91</td>
+                        <td>93</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">New Haven</th>
                         <td>{dict["New Haven"]}</td>
                         <td>N/A</td>
-                        <td>565</td>
+                        <td>595</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">New London</th>
                         <td>{dict["New London"]}</td>
                         <td>N/A</td>
-                        <td>43</td>
+                        <td>45</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Tolland</th>
                         <td>{dict["Tolland"]}</td>
                         <td>N/A</td>
-                        <td>39</td>
+                        <td>40</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Windham</th>
                         <td>{dict["Windham"]}</td>
                         <td>N/A</td>
-                        <td>2</td>
+                        <td>3</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Pending location</th>
-                        <td>312</td>
+                        <td>363</td>
                         <td>N/A</td>
-                        <td>1</td>
+                        <td>3</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
                         <th scope="row">Totals</th>
                         <td>{dict['Total']}</td>
                         <td>N/A</td>
-                        <td>2436</td>
-                        <td>102493</td>
+                        <td>2556</td>
+                        <td>105330</td>
                     </tr>
                     </tbody>
                     <tfoot>
